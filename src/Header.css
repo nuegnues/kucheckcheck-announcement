@@ -1,0 +1,79 @@
+.header {
+  width: 1440px;
+  height: 80px;
+  display: flex;
+  border-top: 2px solid #c3201f;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.logo_and_search {
+  width: 935.5px;
+  height: 40px;
+  margin-left: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.kucc_logo {
+  width: 95px;
+  height: 36px;
+}
+
+#main_search_input {
+  width: 504px;
+  height: 22px;
+  margin-left: 32px;
+  padding: 8px 20px;
+  font-size: 16px;
+  border: 1px solid #c3201f;
+  border-radius: 4px;
+}
+
+#main_search_input:focus {
+  outline: none;
+}
+
+#main_search_logo {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  color: #c3201f;
+  left: 629px;
+  top: 8px;
+}
+
+#main_search_logo:hover {
+  cursor: pointer;
+}
+
+.user_profile {
+  display: flex;
+  align-items: center;
+  width: 189px;
+  height: 56px;
+  margin-left: 251.5px;
+}
+
+.welcome_user {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.alarm_button {
+  width: 34px;
+  height: 34px;
+  margin-left: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.alarm_button:hover {
+  cursor: pointer;
+}
+
+.alarm_logo {
+  width: 18px;
+  height: 18px;
+}

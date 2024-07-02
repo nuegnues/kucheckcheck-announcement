@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import Menu from "./Menu";
+import AnnounceList from "./components/AnnounceList";
+import AnnounceRegister from "./components/AnnounceRegister";
+import AnnounceDetail from "./components/AnnounceDetail";
+import AnnounceModifiy from "./components/AnnounceModify";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="contents">
+        <BrowserRouter>
+          <Menu />
+          <Routes>
+            <Route path="/announce" element={<AnnounceList />} />
+            <Route path="/announce/register" element={<AnnounceRegister />} />
+            <Route
+              path="/announce/detail/:announceId"
+              element={<AnnounceDetail />}
+            />
+            <Route
+              path="/announce/register/:announceId"
+              element={<AnnounceModifiy />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.announce_table_row,
+.announce_table_title,
+.announce_table_date {
+  padding: 6px 16px;
+  border-bottom: 1px solid #c3201f;
+}
+
+.announce_table_title {
+  font-weight: 700;
+}
+
+.announce_table_title:hover {
+  cursor: pointer;
+}
+
+.announce_table_date {
+  width: 95px;
+  text-align: right;
+}
+
+.announce_table_date:hover {
+  cursor: default;
+}

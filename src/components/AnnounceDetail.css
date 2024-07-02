@@ -1,0 +1,72 @@
+.announce_detail {
+  width: 832px;
+  padding: 16px 32px;
+}
+
+.detail_title_text {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.dot {
+  color: #c3201f;
+}
+
+.announce_detail_table_1st_row,
+.announce_detail_table_row,
+.announce_detail_table_title,
+.announce_detail_table_date,
+.announce_detail_table_content {
+  padding: 6px 16px;
+  border-bottom: 1px solid #c3201f;
+}
+
+.announce_detail_table_1st_row {
+  font-weight: 500;
+  background-color: #c3201f;
+  color: white;
+}
+
+.announce_detail_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 16px;
+  margin-bottom: 16px;
+}
+
+.announce_detail_table_date {
+  width: 95px;
+  text-align: right;
+}
+
+#detail_table_title {
+  font-weight: 700;
+}
+
+#detail_table_content {
+  white-space: pre-line;
+  padding: 10px 16px;
+}
+
+.detail_page_buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.announce_modify_button,
+.announce_delete_button {
+  padding: 8px 12px;
+  background-color: #c3201f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.announce_modify_button:hover,
+.announce_delete_button:hover {
+  cursor: pointer;
+}
