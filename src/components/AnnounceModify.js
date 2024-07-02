@@ -21,7 +21,7 @@ const AnnounceModifiy = () => {
     modifyAnnounce(announceId, title, content);
     setTitle("");
     setContent("");
-    navigate("/announce");
+    navigate(`/announce/detail/${announceId}`);
   };
 
   return (
